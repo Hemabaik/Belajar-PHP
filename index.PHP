@@ -26,3 +26,4 @@ echo "<br>";
 echo $f;
 echo "<br>ini decrement<br>";
 echo --$f;
+
