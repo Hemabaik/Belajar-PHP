@@ -9,9 +9,11 @@ if($_POST['email']!="" and $_POST['Password']!=""){
             echo "Login Berhasil";
         }else{
             echo "Password Yang Anda Masukkan Salah!!";
+
         }
     }else{
         echo "Password Yang Anda Masukkan Salah!!";
+        
     }
 }else{
     echo "Maukkan Email dan Password";
