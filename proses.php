@@ -1,20 +1,17 @@
 <?php
-$pass   ="hema123";
-$email  ="hema@gmail";
+$pass = "hema123";
+$email = "hema@gmail.com";
 
-if($_POST['email']!="" and $_POST['Password']!=""){
-
-    if($_POST['email']==$email){
-        if($_POST['password']==$pass){
-            echo "Login Berhasil";
-        }else{
-            echo "Password Yang Anda Masukkan Salah!!";
-
-        }
-    }else{
-        echo "Password Yang Anda Masukkan Salah!!";
-        
-    }
-}else{
-    echo "Maukkan Email dan Password";
+// Variabel input
+if (!empty($_POST['email']) && !empty($_POST['password'])) {
+if ($_POST['email'] === $email && $_POST['password'] === $pass) {
+  header("Location: simpan.php");
+  exit();
+ } else {
+   header("Location: login.php");
+   exit();
+ }
+} else {
+   header("Location: login.php");
+exit();
 }
