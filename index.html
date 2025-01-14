@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div dengan Border Biru dan Jingga</title>
+    <style>
+        .div-biru {
+            width: 100%; /* Lebar div memenuhi lebar layar */
+            height: 50px;
+            border: 5px solid blue; /* Border biru */
+            margin: 10px 0; /* Margin atas dan bawah */
+            display: flex;
+            align-items: center; /* Vertikal tengah */
+            justify-content: center; /* Horizontal tengah */
+            text-align: center; /* Menyelaraskan teks ke tengah */
+        }
+
+        .div-jingga {
+            width: 100%; /* Lebar div memenuhi lebar layar */
+            height: auto;
+            border: 5px solid orange; /* Border jingga */
+            margin: 10px 0;
+            display: flex; /* Menggunakan flexbox untuk tata letak dua div */
+        }
+
+        .tabel {
+            width: 65%; /* Lebar div tabel adalah 65% */
+            padding: 10px;
+        }
+
+        .video {
+            width: 35%; /* Lebar div video adalah 35% */
+            padding: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: center;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="div-biru">
+        <h3>Jadwal Operasi</h3>
+    </div>
+    <div class="div-jingga">
+        <div class="tabel">
+            <h3>Tabel Contoh</h3>
+            <table>
+                <tr>
+                    <th>Nama</th>
+                    <th>Usia</th>
+                    <th>Kota</th>
+                </tr>
+                <tr>
+                    <td>Alice</td>
+                    <td>25</td>
+                    <td>Jakarta</td>
+                </tr>
+                <tr>
+                    <td>Bob</td>
+                    <td>30</td>
+                    <td>Bandung</td>
+                </tr>
+            </table>
+        </div>
+        <div class="video">
+            <h3>Video YouTube</h3>
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+</body>
+</html>
