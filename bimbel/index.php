@@ -40,7 +40,7 @@ if (isset($_GET['id'])) {
     </nav>
 <div class="container">
     <br>
-    <h4><center>DAFTAR PESERTA PELATIHAN</center></h4>
+    <h4><center>DAFTAR SISWA/I BIMBEL</center></h4>
 <?php
 
     include "koneksi.php";
