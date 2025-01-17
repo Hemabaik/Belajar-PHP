@@ -5,7 +5,7 @@ session_start();
 $host_db    = "localhost";
 $user_db    = "root";
 $pass_db    = "";
-$nama_db    = "login";
+$nama_db    = "pendaftaran_bimbel";
 $koneksi    = mysqli_connect($host_db,$user_db,$pass_db,$nama_db);
 //atur variabel
 $err        = "";
